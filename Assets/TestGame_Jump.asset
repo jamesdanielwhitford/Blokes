@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c1e4bddf0e7fd01796555603e316d23, type: 3}
   m_Name: TestGame_Jump
   m_EditorClassIdentifier: 
-  sceneName: TestGame_Jump
-  commandText: JUMP!
-  timeLimit: 5
+  sceneName: TEST_GAME
+  commandText: This is a test game!
+  timeLimit: 3
   isUnlocked: 1

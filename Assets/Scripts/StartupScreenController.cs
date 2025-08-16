@@ -1,11 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class StartupScreenController : MonoBehaviour
 {
     [Header("UI References")]
-    [SerializeField] private Text titleText;
-    [SerializeField] private Text highScoreText;
+    [SerializeField] private TextMeshProUGUI titleText;
+    [SerializeField] private TextMeshProUGUI highScoreText;
     [SerializeField] private Button startGameButton;
     [SerializeField] private Button quitButton;
     

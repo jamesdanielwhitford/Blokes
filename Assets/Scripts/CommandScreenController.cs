@@ -1,12 +1,13 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class CommandScreenController : MonoBehaviour
 {
     [Header("UI References")]
-    [SerializeField] private Text commandText;
-    [SerializeField] private Text countdownText;
+    [SerializeField] private TextMeshProUGUI commandText;
+    [SerializeField] private TextMeshProUGUI countdownText;
     
     [Header("Animation Settings")]
     [SerializeField] private float fadeInDuration = 0.5f;
@@ -100,7 +101,7 @@ public class CommandScreenController : MonoBehaviour
         }
     }
     
-    private IEnumerator FadeText(Text textComponent, float startAlpha, float endAlpha, float duration)
+    private IEnumerator FadeText(TextMeshProUGUI textComponent, float startAlpha, float endAlpha, float duration)
     {
         if (textComponent == null || duration <= 0f)
             yield break;
@@ -129,7 +130,7 @@ public class CommandScreenController : MonoBehaviour
         textComponent.color = endColor;
     }
     
-    private void SetTextAlpha(Text textComponent, float alpha)
+    private void SetTextAlpha(TextMeshProUGUI textComponent, float alpha)
     {
         if (textComponent != null)
         {

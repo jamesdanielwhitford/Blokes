@@ -2,11 +2,12 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
+using TMPro;
 
 public class MicrogameController : MonoBehaviour
 {
     [Header("UI References")]
-    [SerializeField] private Text timerText;
+    [SerializeField] private TextMeshProUGUI timerText;
     
     [Header("Timer Settings")]
     [SerializeField] private bool useCustomTimeLimit = false;
